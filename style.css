@@ -1,0 +1,148 @@
+*{
+    margin:0px;
+}
+html {
+    scroll-behavior: smooth /* Faz scroll suave */
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+
+}
+header {
+    display: flex; /* dispoe elementos alinhados- horizontal*/
+    justify-content: space-around;/*alinha elementos na horizontal*/
+    align-items: center;/*contra os  elementos*/
+    background-color: cadetblue ;
+    padding: 15px;
+    text-align: center;
+}
+.titulo {
+    border: none;/* retira a borda*/ 
+    color: white
+}
+header div a {
+
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 20px;/*arredonda os cantos do elemento*/
+}
+header div a:hover { /*o hover permite alterar as propriedades quando passamos o cursosr*/
+    background-color: aliceblue;
+    color: cadetblue;
+}
+main {
+width: 50%;/*width define a largura do elemento*/
+/* border:1px solid black; */
+margin: 20px auto;/*auto insere elemento no meio da pagina*/
+}
+.negrito {
+    font-weight: bold;/*a letra fica a bold*/
+}
+
+p{
+    line-height: 30px;/*dá espaço entre as linhas*/
+}
+
+
+
+
+.janela {
+    background-color:white;
+    padding: 20px;
+    margin-top: 20px;
+    border-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.texto {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    width:100%
+
+
+}
+
+.link-detalhes {
+    text-align: center;
+
+}
+.detalhes {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin: 1px 0px;
+    
+
+}
+form {
+    width: 60%;
+    margin: 20px auto;
+}
+
+form label,
+form input,/*inmput Campo de formulario para escrever*/
+form textarea {
+    display: block;/*converte elemento inline em elemento block que ocupa toda a linha*/
+    width:100%;
+
+}
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 107%;
+}
+
+footer {
+    background-color: cadetblue ;
+    padding: 15px;
+    text-align: center;
+    color: white;
+
+}
+
+@media (max-width: 760px){
+    header {
+        flex-direction: column;
+        gap: 15px;
+
+}
+        header div a {
+            display: inline-block;
+            margin-bottom: 10px;
+
+        }
+    }
+    main {
+        width: 80%;
+
+    }
+    form {
+        width: 80%;
+    }
+
+
+    }
+}
+    
